@@ -17,5 +17,7 @@ class MainActivity : AppCompatActivity() {
     Glide.with(this)
       .load("https://pbs.twimg.com/profile_images/1108958487801786368/wwk-3ysJ_400x400.jpg")
       .into(right)
+
+    root.transitionToEnd()
   }
 }
