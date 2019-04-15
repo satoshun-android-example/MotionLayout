@@ -1,18 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
   xmlns:app="http://schemas.android.com/apk/res-auto"
-  android:id="@+id/root"
+  xmlns:tools="http://schemas.android.com/tools"
   android:layout_width="match_parent"
-  android:layout_height="match_parent">
+  android:layout_height="match_parent"
+  app:layoutDescription="@xml/scene_circle">
 
-  <TextView
-    android:layout_width="0dp"
-    android:layout_height="80dp"
-    android:gravity="center"
-    android:text="HELLO"
-    android:textSize="28sp"
+  <androidx.constraintlayout.utils.widget.ImageFilterView
+    android:id="@+id/left"
+    android:layout_width="64dp"
+    android:layout_height="64dp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:round="0.4dp"
+    tools:src="@tools:sample/avatars" />
+
+  <androidx.constraintlayout.utils.widget.ImageFilterView
+    android:id="@+id/right"
+    android:layout_width="64dp"
+    android:layout_height="64dp"
     app:layout_constraintBottom_toBottomOf="parent"
     app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toTopOf="parent" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+    app:layout_constraintTop_toTopOf="parent"
+    app:round="0.4dp"
+    tools:src="@tools:sample/avatars" />
+</androidx.constraintlayout.motion.widget.MotionLayout>

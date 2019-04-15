@@ -82,6 +82,8 @@ const val DAGGER_ANDROID_RUNTIME = "com.google.dagger:dagger-android:$VDAGGER"
 const val DAGGER_ANDROID_COMPILER = "com.google.dagger:dagger-android-processor:$VDAGGER"
 const val DAGGER_ANDROID_SUPPORT_RUNTIME = "com.google.dagger:dagger-android-support:$VDAGGER"
 
+const val GLIDE = "com.github.bumptech.glide:glide:4.9.0"
+
 const val JUNIT = "junit:junit:4.13-beta-1"
 const val TRUTH = "com.google.truth:truth:0.42"
 const val MOCKITO_KOTLIN = "com.nhaarman:mockito-kotlin-kt1.1:1.5.0"

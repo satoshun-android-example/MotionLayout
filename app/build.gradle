@@ -36,6 +36,8 @@ dependencies {
   implementation DAGGER_ANDROID_RUNTIME
   kapt DAGGER_ANDROID_COMPILER
 
+  implementation GLIDE
+
   testImplementation JUNIT
 
   androidTestImplementation TEST_RUNNER
