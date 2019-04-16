@@ -6,8 +6,7 @@
     android:id="@+id/transition_icon"
     motion:constraintSetEnd="@id/end_icon"
     motion:constraintSetStart="@id/start_icon"
-    motion:duration="800"
-    motion:motionInterpolator="bounces" />
+    motion:duration="800" />
 
   <ConstraintSet android:id="@+id/start_icon">
     <Constraint
@@ -21,26 +20,9 @@
       motion:layout_constraintStart_toStartOf="parent"
       motion:layout_constraintTop_toTopOf="parent" />
 
-    <Constraint
-      android:id="@id/left"
-      android:layout_width="120dp"
-      android:layout_height="120dp"
-      motion:layout_constraintBottom_toBottomOf="parent"
-      motion:layout_constraintEnd_toStartOf="@id/right"
-      motion:layout_constraintHorizontal_chainStyle="packed"
-      motion:layout_constraintStart_toStartOf="parent"
-      motion:layout_constraintTop_toTopOf="parent"
-      motion:round="0.4dp" />
-
-    <Constraint
-      android:id="@id/right"
-      android:layout_width="120dp"
-      android:layout_height="120dp"
-      motion:layout_constraintBottom_toBottomOf="parent"
-      motion:layout_constraintEnd_toEndOf="parent"
-      motion:layout_constraintStart_toEndOf="@id/left"
-      motion:layout_constraintTop_toTopOf="parent"
-      motion:round="0.4dp" />
+    <Constraint android:id="@id/left" />
+    <Constraint android:id="@id/right" />
+    <!--<Constraint android:id="@id/title" />-->
   </ConstraintSet>
 
   <ConstraintSet android:id="@+id/end_icon">
@@ -55,26 +37,9 @@
       motion:layout_constraintStart_toStartOf="parent"
       motion:layout_constraintTop_toTopOf="parent" />
 
-    <Constraint
-      android:id="@id/left"
-      android:layout_width="120dp"
-      android:layout_height="120dp"
-      motion:layout_constraintBottom_toBottomOf="parent"
-      motion:layout_constraintEnd_toStartOf="@id/right"
-      motion:layout_constraintHorizontal_chainStyle="packed"
-      motion:layout_constraintStart_toStartOf="parent"
-      motion:layout_constraintTop_toTopOf="parent"
-      motion:round="0.4dp" />
-
-    <Constraint
-      android:id="@id/right"
-      android:layout_width="120dp"
-      android:layout_height="120dp"
-      motion:layout_constraintBottom_toBottomOf="parent"
-      motion:layout_constraintEnd_toEndOf="parent"
-      motion:layout_constraintStart_toEndOf="@id/left"
-      motion:layout_constraintTop_toTopOf="parent"
-      motion:round="0.4dp" />
+    <Constraint android:id="@id/left" />
+    <Constraint android:id="@id/right" />
+    <!--<Constraint android:id="@id/title" />-->
   </ConstraintSet>
 
   <KeyFrameSet>

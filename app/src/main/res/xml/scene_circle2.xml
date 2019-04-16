@@ -6,8 +6,7 @@
     android:id="@+id/image_transition"
     motion:constraintSetEnd="@+id/end_image"
     motion:constraintSetStart="@+id/start_image"
-    motion:duration="800"
-    motion:motionInterpolator="easeInOut" />
+    motion:duration="500" />
 
   <ConstraintSet android:id="@+id/start_image">
     <Constraint
@@ -18,7 +17,8 @@
       motion:layout_constraintBottom_toBottomOf="parent"
       motion:layout_constraintEnd_toStartOf="parent"
       motion:layout_constraintTop_toTopOf="parent"
-      motion:round="0.4dp" />
+      motion:round="0.4dp"
+      motion:transitionEasing="cubic(0.07,0.84,0.28,0.99)" />
 
     <Constraint
       android:id="@id/right"
@@ -41,7 +41,8 @@
       motion:layout_constraintHorizontal_chainStyle="packed"
       motion:layout_constraintStart_toStartOf="parent"
       motion:layout_constraintTop_toTopOf="parent"
-      motion:round="0.4dp" />
+      motion:round="0.4dp"
+      motion:transitionEasing="cubic(0.07,0.84,0.28,0.99)" />
 
     <Constraint
       android:id="@id/right"
@@ -57,26 +58,24 @@
   <KeyFrameSet>
     <KeyAttribute
       android:rotation="-90"
-      motion:framePosition="25"
+      motion:framePosition="0"
       motion:motionTarget="@id/left" />
 
-    <KeyPosition
-      motion:framePosition="25"
-      motion:keyPositionType="pathRelative"
-      motion:motionTarget="@id/left"
-      motion:percentY="-0.15" />
+    <KeyAttribute
+      android:rotation="0"
+      motion:framePosition="100"
+      motion:motionTarget="@id/left" />
   </KeyFrameSet>
 
   <KeyFrameSet>
     <KeyAttribute
       android:rotation="90"
-      motion:framePosition="25"
+      motion:framePosition="0"
       motion:motionTarget="@id/right" />
 
-    <KeyPosition
-      motion:framePosition="25"
-      motion:keyPositionType="pathRelative"
-      motion:motionTarget="@id/right"
-      motion:percentY="-0.15" />
+    <KeyAttribute
+      android:rotation="0"
+      motion:framePosition="100"
+      motion:motionTarget="@id/right" />
   </KeyFrameSet>
 </MotionScene>

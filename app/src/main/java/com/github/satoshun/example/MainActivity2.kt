@@ -39,8 +39,15 @@ class MainActivity2 : AppCompatActivity() {
             icon.visibility = View.VISIBLE
 
             root.loadLayoutDescription(R.xml.scene_circle3)
+
+//            root.progress = 0f
+
+            // same
+//            root.setTransition(R.id.start_image, R.id.end_image)
+
             root.setTransition(R.id.start_icon, R.id.end_icon)
-            root.transitionToEnd()
+
+//            root.transitionToEnd()
           }
           b = true
         }
