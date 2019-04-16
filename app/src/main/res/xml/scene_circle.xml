@@ -80,11 +80,15 @@
       motion:framePosition="25"
       motion:motionTarget="@id/left" />
 
-    <KeyPosition
-      motion:framePosition="25"
-      motion:keyPositionType="pathRelative"
+    <KeyAttribute
+      motion:framePosition="50"
       motion:motionTarget="@id/left"
-      motion:percentY="-0.15" />
+      motion:progress="100" />
+
+    <KeyAttribute
+      motion:framePosition="100"
+      motion:motionTarget="@id/left"
+      motion:progress="100" />
   </KeyFrameSet>
 
   <KeyFrameSet>
@@ -92,12 +96,6 @@
       android:rotation="90"
       motion:framePosition="25"
       motion:motionTarget="@id/right" />
-
-    <KeyPosition
-      motion:framePosition="25"
-      motion:keyPositionType="pathRelative"
-      motion:motionTarget="@id/right"
-      motion:percentY="-0.15" />
   </KeyFrameSet>
 
   <KeyFrameSet>
