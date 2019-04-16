@@ -30,6 +30,7 @@ dependencies {
   implementation MATERIAL
   implementation APPCOMPAT
   implementation CONSTRAINTLAYOUT
+  implementation KTX
 
   implementation DAGGER_RUNTIME
   kapt DAGGER_COMPILER

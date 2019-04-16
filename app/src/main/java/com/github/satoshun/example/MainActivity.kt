@@ -3,13 +3,14 @@ package com.github.satoshun.example
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.constraintlayout.motion.widget.MotionLayout
+import androidx.core.view.doOnLayout
 import com.bumptech.glide.Glide
 import kotlinx.android.synthetic.main.main_act.*
 
 class MainActivity : AppCompatActivity() {
   override fun onCreate(savedInstanceState: Bundle?) {
     super.onCreate(savedInstanceState)
-    setContentView(R.layout.main_act2)
+    setContentView(R.layout.main_act)
 
     Glide.with(this)
       .load("https://pbs.twimg.com/profile_images/1108958487801786368/wwk-3ysJ_400x400.jpg")
@@ -30,9 +31,11 @@ class MainActivity : AppCompatActivity() {
       }
 
       override fun onTransitionCompleted(p0: MotionLayout?, p1: Int) {
-        println(p0)
       }
     })
-    root.transitionToEnd()
+
+    root.doOnLayout {
+      root.transitionToEnd()
+    }
   }
 }
