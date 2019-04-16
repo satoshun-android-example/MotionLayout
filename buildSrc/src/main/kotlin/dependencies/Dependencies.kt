@@ -1,7 +1,7 @@
 package dependencies
 
 const val COMPILE_SDK = 28
-const val MIN_SDK = 25
+const val MIN_SDK = 21
 const val TARGET_SDK = 28
 
 private const val VKOTLIN = "1.3.30"
@@ -12,7 +12,7 @@ const val KOTLIN_PLUGIN = "org.jetbrains.kotlin:kotlin-gradle-plugin:$VKOTLIN"
 const val SAFEARGS_PLUGIN = "android.arch.navigation:navigation-safe-args-gradle-plugin:$VNAVIGATION"
 const val VERSIONS_PLUGIN = "com.github.ben-manes:gradle-versions-plugin:0.20.0"
 
-private const val VCOUROUTINE = "1.1.1"
+private const val VCOUROUTINE = "1.2.0"
 const val KOTLIN = "org.jetbrains.kotlin:kotlin-stdlib:$VKOTLIN"
 const val COROUTINE = "org.jetbrains.kotlinx:kotlinx-coroutines-core:$VCOUROUTINE"
 const val UI_COROUTINE = "org.jetbrains.kotlinx:kotlinx-coroutines-android:$VCOUROUTINE"
