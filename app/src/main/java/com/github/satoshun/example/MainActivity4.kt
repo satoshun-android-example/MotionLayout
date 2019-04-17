@@ -35,15 +35,15 @@ class MainActivity4 : AppCompatActivity() {
 
         override fun onTransitionCompleted(p0: MotionLayout?, p1: Int) {
           if (state == 0) {
-            root.setTransition(R.id.scene5_rotation_begin, R.id.scene5_rotation_end)
-            root.setTransitionDuration(1000)
-            root.transitionToEnd()
-          }
-          if (state == 1) {
             root.setTransition(R.id.scene5_icon_begin, R.id.scene5_icon_end)
-            root.setTransitionDuration(1000)
+            root.setTransitionDuration(800)
             root.transitionToEnd()
           }
+//          if (state == 1) {
+//            root.setTransition(R.id.scene5_icon_begin, R.id.scene5_icon_end)
+//            root.setTransitionDuration(800)
+//            root.transitionToEnd()
+//          }
           state++
         }
       })
