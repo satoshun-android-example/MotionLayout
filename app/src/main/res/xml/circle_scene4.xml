@@ -54,7 +54,7 @@
 
   <KeyFrameSet>
     <KeyAttribute
-      android:rotation="-90"
+      android:rotation="-45"
       motion:framePosition="0"
       motion:motionTarget="@id/left" />
 
@@ -66,7 +66,7 @@
 
   <KeyFrameSet>
     <KeyAttribute
-      android:rotation="90"
+      android:rotation="45"
       motion:framePosition="0"
       motion:motionTarget="@id/right" />
 

@@ -38,10 +38,10 @@ class MainActivity3 : AppCompatActivity() {
 //            root.progress = 0f
 
             root.setTransition(R.id.scene4_icon_begin, R.id.scene4_icon_end)
-            root.setTransitionDuration(5000)
-
+            root.setTransitionDuration(1000)
+//
 //            icon.visibility = View.VISIBLE
-
+//
             root.transitionToEnd()
           }
           b = true
