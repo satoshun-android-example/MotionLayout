@@ -1,7 +1,6 @@
 package com.github.satoshun.example
 
 import android.os.Bundle
-import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.constraintlayout.motion.widget.MotionLayout
 import androidx.core.view.doOnLayout
@@ -39,11 +38,11 @@ class MainActivity3 : AppCompatActivity() {
 //            root.progress = 0f
 
             root.setTransition(R.id.scene4_icon_begin, R.id.scene4_icon_end)
+            root.setTransitionDuration(5000)
 
-//            root.setTransitionDuration(5000)
 //            icon.visibility = View.VISIBLE
 
-//            root.transitionToEnd()
+            root.transitionToEnd()
           }
           b = true
         }
