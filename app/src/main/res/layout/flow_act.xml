@@ -5,10 +5,6 @@
   android:id="@+id/root"
   android:layout_width="match_parent"
   android:layout_height="match_parent"
-  android:orientation="horizontal"
-  app:flow_horizontalStyle="packed"
-  app:flow_verticalStyle="packed"
-  app:flow_wrapMode="aligned"
   tools:ignore="HardcodedText">
 
   <TextView
@@ -16,34 +12,57 @@
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:text="chain1"
-    android:textSize="20sp"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toTopOf="parent" />
+    android:textSize="20sp" />
 
   <TextView
     android:id="@+id/title2"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:text="chain2"
-    android:textSize="20sp"
-    app:layout_constraintStart_toEndOf="@id/title"
-    app:layout_constraintTop_toTopOf="@id/title" />
+    android:textSize="20sp" />
 
   <TextView
     android:id="@+id/title3"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:text="chain2"
-    android:textSize="60sp"
-    app:layout_constraintStart_toEndOf="@id/title2"
-    app:layout_constraintTop_toTopOf="@id/title2" />
+    android:text="chain3"
+    android:textSize="50sp" />
 
   <TextView
     android:id="@+id/title4"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:text="chain2"
-    android:textSize="60sp"
-    app:layout_constraintStart_toEndOf="@id/title3"
-    app:layout_constraintTop_toTopOf="@id/title3" />
+    android:text="chain4"
+    android:textSize="50sp" />
+
+  <TextView
+    android:id="@+id/title5"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="chain5"
+    android:textSize="10sp" />
+
+  <TextView
+    android:id="@+id/title6"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="chain6"
+    android:textSize="10sp" />
+
+  <TextView
+    android:id="@+id/title7"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="chain7"
+    android:textSize="10sp" />
+
+  <androidx.constraintlayout.helper.widget.Flow
+    android:id="@+id/flow"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:constraint_referenced_ids="title,title2,title3,title4,title5,title6,title7"
+    app:flow_horizontalGap="20dp"
+    app:flow_horizontalStyle="packed"
+    app:flow_wrapMode="chain"
+    tools:ignore="MissingConstraints" />
 </androidx.constraintlayout.widget.ConstraintLayout>
