@@ -22,5 +22,8 @@ class AppActivity : AppCompatActivity() {
     main4.setOnClickListener {
       startActivity(Intent(this, MainActivity4::class.java))
     }
+    flow.setOnClickListener {
+      startActivity(Intent(this, FlowExampleActivity::class.java))
+    }
   }
 }
