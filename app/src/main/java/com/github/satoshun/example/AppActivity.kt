@@ -25,5 +25,8 @@ class AppActivity : AppCompatActivity() {
     flow.setOnClickListener {
       startActivity(Intent(this, FlowExampleActivity::class.java))
     }
+    flow_motion_layout.setOnClickListener {
+      startActivity(Intent(this, FlowMotionLayoutExampleActivity::class.java))
+    }
   }
 }
