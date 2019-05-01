@@ -28,5 +28,8 @@ class AppActivity : AppCompatActivity() {
     flow_motion_layout.setOnClickListener {
       startActivity(Intent(this, FlowMotionLayoutExampleActivity::class.java))
     }
+    stack_card.setOnClickListener {
+      startActivity(Intent(this, StackCardExampleActivity::class.java))
+    }
   }
 }

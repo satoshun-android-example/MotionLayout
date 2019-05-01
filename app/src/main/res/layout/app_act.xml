@@ -60,4 +60,13 @@
     app:layout_constraintEnd_toEndOf="@id/flow"
     app:layout_constraintStart_toStartOf="@id/flow"
     app:layout_constraintTop_toBottomOf="@id/flow" />
+
+  <Button
+    android:id="@+id/stack_card"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="stack card"
+    app:layout_constraintEnd_toEndOf="@id/flow_motion_layout"
+    app:layout_constraintStart_toStartOf="@id/flow_motion_layout"
+    app:layout_constraintTop_toBottomOf="@id/flow_motion_layout" />
 </androidx.constraintlayout.widget.ConstraintLayout>

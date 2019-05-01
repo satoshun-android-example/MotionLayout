@@ -27,5 +27,6 @@
     <activity android:name=".MainActivity4" />
     <activity android:name=".FlowExampleActivity" />
     <activity android:name=".FlowMotionLayoutExampleActivity" />
+    <activity android:name=".StackCardExampleActivity" />
   </application>
 </manifest>
