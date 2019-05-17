@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.constraintlayout.motion.widget.MotionLayout
+import androidx.constraintlayout.motion.widget.MotionScene
 import androidx.core.view.doOnLayout
 import com.bumptech.glide.Glide
 import kotlinx.android.synthetic.main.main_act2.*
@@ -50,6 +51,10 @@ class MainActivity2 : AppCompatActivity() {
 //            root.transitionToEnd()
           }
           b = true
+        }
+
+        override fun allowsTransition(p0: MotionScene.Transition?): Boolean {
+          return true
         }
       })
 
