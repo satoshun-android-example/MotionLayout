@@ -72,7 +72,7 @@
 
     <KeyAttribute
       android:rotation="-45"
-      motion:framePosition="50"
+      motion:framePosition="95"
       motion:motionTarget="@id/left" />
 
     <KeyAttribute
@@ -89,7 +89,7 @@
 
     <KeyAttribute
       android:rotation="45"
-      motion:framePosition="50"
+      motion:framePosition="95"
       motion:motionTarget="@id/right" />
 
     <KeyAttribute
