@@ -69,4 +69,13 @@
     app:layout_constraintEnd_toEndOf="@id/flow_motion_layout"
     app:layout_constraintStart_toStartOf="@id/flow_motion_layout"
     app:layout_constraintTop_toBottomOf="@id/flow_motion_layout" />
+
+  <Button
+    android:id="@+id/recycler"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="recycler"
+    app:layout_constraintEnd_toEndOf="@id/stack_card"
+    app:layout_constraintStart_toStartOf="@id/stack_card"
+    app:layout_constraintTop_toBottomOf="@id/stack_card" />
 </androidx.constraintlayout.widget.ConstraintLayout>

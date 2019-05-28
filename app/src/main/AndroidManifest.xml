@@ -28,5 +28,6 @@
     <activity android:name=".FlowExampleActivity" />
     <activity android:name=".FlowMotionLayoutExampleActivity" />
     <activity android:name=".StackCardExampleActivity" />
+    <activity android:name=".RecyclerViewFlowExample" />
   </application>
 </manifest>

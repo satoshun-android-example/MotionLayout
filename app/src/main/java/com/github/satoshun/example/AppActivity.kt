@@ -31,5 +31,8 @@ class AppActivity : AppCompatActivity() {
     stack_card.setOnClickListener {
       startActivity(Intent(this, StackCardExampleActivity::class.java))
     }
+    recycler.setOnClickListener {
+      startActivity(Intent(this, RecyclerViewFlowExample::class.java))
+    }
   }
 }
