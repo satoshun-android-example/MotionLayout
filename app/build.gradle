@@ -39,6 +39,8 @@ dependencies {
 
   implementation GLIDE
 
+  implementation FLEXBOX
+
   testImplementation JUNIT
 
   androidTestImplementation TEST_RUNNER

@@ -34,5 +34,8 @@ class AppActivity : AppCompatActivity() {
     recycler.setOnClickListener {
       startActivity(Intent(this, RecyclerViewFlowExample::class.java))
     }
+    flexbox.setOnClickListener {
+      startActivity(Intent(this, RecyclerViewFlexboxActivity::class.java))
+    }
   }
 }
