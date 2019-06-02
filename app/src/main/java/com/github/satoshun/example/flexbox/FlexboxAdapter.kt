@@ -1,31 +1,19 @@
-package com.github.satoshun.example
+package com.github.satoshun.example.flexbox
 
-import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
-import com.google.android.flexbox.FlexboxLayoutManager
-import kotlinx.android.synthetic.main.flex_box_act.*
-
-class RecyclerViewFlexboxActivity : AppCompatActivity() {
-  override fun onCreate(savedInstanceState: Bundle?) {
-    super.onCreate(savedInstanceState)
-    setContentView(R.layout.flex_box_act)
-
-    recycler.layoutManager = FlexboxLayoutManager(this)
-    recycler.adapter = FlexboxAdapter()
-  }
-}
-
-data class Item(
-  private val name: String
-)
+import com.github.satoshun.example.R
+import com.google.android.material.chip.Chip
 
 internal class FlexboxAdapter : ListAdapter<Item, MyViewHolder>(DIFF) {
+  init {
+    submitList(items)
+  }
+
   override fun onCreateViewHolder(
     parent: ViewGroup,
     viewType: Int
@@ -43,12 +31,13 @@ internal class FlexboxAdapter : ListAdapter<Item, MyViewHolder>(DIFF) {
     holder: MyViewHolder,
     position: Int
   ) {
+    holder.itemView.findViewById<Chip>(R.id.chip).text = getItem(position).name
   }
 }
 
 internal class MyViewHolder(view: View) : RecyclerView.ViewHolder(view)
 
-val DIFF = object : DiffUtil.ItemCallback<Item>() {
+private val DIFF = object : DiffUtil.ItemCallback<Item>() {
   override fun areItemsTheSame(oldItem: Item, newItem: Item): Boolean {
     return oldItem == newItem
   }
@@ -56,4 +45,8 @@ val DIFF = object : DiffUtil.ItemCallback<Item>() {
   override fun areContentsTheSame(oldItem: Item, newItem: Item): Boolean {
     return oldItem == newItem
   }
+}
+
+private val items = (0..1000).map {
+  Item((it + 1000).toString())
 }
