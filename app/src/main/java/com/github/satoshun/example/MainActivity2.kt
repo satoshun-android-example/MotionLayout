@@ -35,8 +35,10 @@ class MainActivity2 : AppCompatActivity() {
         override fun onTransitionChange(p0: MotionLayout?, p1: Int, p2: Int, p3: Float) {
         }
 
-        override fun onTransitionCompleted(p0: MotionLayout?, p1: Int) {
-          if (!b) {
+        override fun onTransitionCompleted(p0: MotionLayout, p1: Int) {
+          if (!b && p0.currentState == p0.endState) {
+            b = true
+
             icon.visibility = View.VISIBLE
 
             root.loadLayoutDescription(R.xml.scene_circle3)
@@ -47,10 +49,8 @@ class MainActivity2 : AppCompatActivity() {
 //            root.setTransition(R.id.start_image, R.id.end_image)
 
             root.setTransition(R.id.start_icon, R.id.end_icon)
-
 //            root.transitionToEnd()
           }
-          b = true
         }
       })
 

@@ -42,14 +42,14 @@ class MainActivity3 : AppCompatActivity() {
             "[state ${root.currentState}], " +
             "[currentId ${currentId}]")
           if (!b && currentId == root.currentState) {
+            b = true
+
 //            root.progress = 0f
 
             root.setTransition(R.id.icon_transition)
 //            root.setTransition(R.id.scene4_icon_begin, R.id.scene4_icon_end)
             root.setTransitionDuration(1000)
             root.transitionToEnd()
-
-            b = true
 
 //            icon.visibility = View.VISIBLE
 //
