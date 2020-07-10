@@ -15,11 +15,11 @@ class MainActivity2 : AppCompatActivity() {
     setContentView(R.layout.main_act2)
 
     Glide.with(this)
-      .load("https://pbs.twimg.com/profile_images/1125348342676897792/14E24iP9_400x400.jpg")
+      .load("https://pbs.twimg.com/profile_images/1254338014605570054/TTmM7svb_400x400.jpg")
       .into(left)
 
     Glide.with(this)
-      .load("https://pbs.twimg.com/profile_images/1125348342676897792/14E24iP9_400x400.jpg")
+      .load("https://pbs.twimg.com/profile_images/1254338014605570054/TTmM7svb_400x400.jpg")
       .into(right)
 
     root.doOnLayout {
