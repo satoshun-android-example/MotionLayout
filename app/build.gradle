@@ -27,10 +27,11 @@ android {
 dependencies {
   implementation KOTLIN
 
-  implementation MATERIAL
   implementation APPCOMPAT
-  implementation CONSTRAINTLAYOUT
   implementation KTX
+
+  implementation MATERIAL
+  implementation CONSTRAINTLAYOUT
 
   implementation DAGGER_RUNTIME
   kapt DAGGER_COMPILER

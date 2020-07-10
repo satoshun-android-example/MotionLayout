@@ -3,7 +3,6 @@ package com.github.satoshun.example
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.constraintlayout.motion.widget.MotionLayout
-import androidx.constraintlayout.motion.widget.MotionScene
 import androidx.core.view.doOnLayout
 import com.bumptech.glide.Glide
 import kotlinx.android.synthetic.main.main_act4.*
@@ -46,10 +45,6 @@ class MainActivity4 : AppCompatActivity() {
 //            root.transitionToEnd()
 //          }
           state++
-        }
-
-        override fun allowsTransition(p0: MotionScene.Transition?): Boolean {
-          return true
         }
       })
 

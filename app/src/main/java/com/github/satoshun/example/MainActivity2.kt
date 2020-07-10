@@ -52,10 +52,6 @@ class MainActivity2 : AppCompatActivity() {
           }
           b = true
         }
-
-        override fun allowsTransition(p0: MotionScene.Transition?): Boolean {
-          return true
-        }
       })
 
       root.transitionToEnd()
