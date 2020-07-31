@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.github.satoshun.example.flexbox.RecyclerViewFlexboxActivity
+import com.github.satoshun.example.slidein.SlideInActivity
 import kotlinx.android.synthetic.main.app_act.*
 
 class AppActivity : AppCompatActivity() {
@@ -11,6 +12,9 @@ class AppActivity : AppCompatActivity() {
     super.onCreate(savedInstanceState)
     setContentView(R.layout.app_act)
 
+    slide_in.setOnClickListener {
+      startActivity(Intent(this, SlideInActivity::class.java))
+    }
     main1.setOnClickListener {
       startActivity(Intent(this, MainActivity::class.java))
     }

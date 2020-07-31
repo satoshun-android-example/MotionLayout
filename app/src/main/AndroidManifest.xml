@@ -22,6 +22,7 @@
       </intent-filter>
     </activity>
 
+    <activity android:name=".slidein.SlideInActivity" />
     <activity android:name=".MainActivity" />
     <activity android:name=".MainActivity2" />
     <activity android:name=".MainActivity3" />

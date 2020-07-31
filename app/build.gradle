@@ -22,10 +22,18 @@ android {
       proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
     }
   }
+  buildFeatures {
+    viewBinding = true
+  }
 }
 
 dependencies {
   implementation KOTLIN
+
+  implementation ACTIVITYX
+  implementation FRAGMENTX
+  implementation LIVEDATA
+  implementation VIEWMODEL
 
   implementation APPCOMPAT
   implementation KTX

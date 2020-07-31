@@ -10,6 +10,12 @@
   tools:ignore="HardcodedText">
 
   <Button
+    android:id="@+id/slide_in"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Slide In" />
+
+  <Button
     android:id="@+id/main1"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
